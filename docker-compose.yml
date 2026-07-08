@@ -1,0 +1,13 @@
+services:
+  nginx:
+    image: nginx:latest
+    container_name: openstream-nginx
+
+    ports:
+      - "80:80"
+
+    volumes:
+      - ./streaming/nginx/html:/usr/share/nginx/html
+
+    restart: unless-stopped
+
