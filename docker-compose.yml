@@ -2,12 +2,9 @@ services:
   nginx:
     image: nginx:latest
     container_name: openstream-nginx
-
     ports:
       - "80:80"
-
     volumes:
-      - ./streaming/nginx/html:/usr/share/nginx/html
-
+      - ./infrastructure/nginx/html:/usr/share/nginx/html
+      - ./infrastructure/nginx/conf/default.conf:/etc/nginx/conf.d/default.conf
     restart: unless-stopped
-
