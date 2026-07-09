@@ -5,6 +5,6 @@ services:
     ports:
       - "80:80"
     volumes:
-      - ./infrastructure/nginx/html:/usr/share/nginx/html
+      - ./frontend/dist:/usr/share/nginx/html
       - ./infrastructure/nginx/conf/default.conf:/etc/nginx/conf.d/default.conf
     restart: unless-stopped
