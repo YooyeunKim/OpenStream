@@ -4,7 +4,7 @@
 
 .landing-page {
   min-height: 100vh;
-  display: gid;
+  display: grid;
   place-items: center;
   padding: 24px;
 }
@@ -44,12 +44,12 @@
   cursor: pointer;
 }
 
-.action-button:primary {
+.action-button.primary {
   background-color: #242424;
   color: #ffffff;
 }
 
-.action-button:secondary {
+.action-button.secondary {
   background: transparent;
   color: #242424;
   border-color: #242424;
