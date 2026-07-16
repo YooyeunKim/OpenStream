@@ -1,31 +1,27 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
+    <main className="landing-page">
       <section id="center">
-        OpenStream
-        나마만의 스트리밍 플랫폼
-        <button
-          type="button"
-          className="counter"
-        >
-          방송시작
-        </button>
-        <button
-          type="button"
-          className="counter"
-        >
-          방송보기
-        </button>
+        <h1>OpenStream</h1>
+        <p>나만의 스트리밍 플랫폼</p>
+        <div className="action-buttons">
+            <button
+              type="button"
+              className="action-button primary"
+            >
+              방송시작
+            </button>
+          <button
+            type="button"
+            className="action-button secondary"
+          >
+            방송보기
+          </button>
+        </div>
       </section>
-    </>
+    </main>
   )
 }
 
